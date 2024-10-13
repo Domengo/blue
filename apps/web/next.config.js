@@ -13,6 +13,8 @@ module.exports = {
       ".web.tsx",
       ...config.resolve.extensions,
     ];
+
+    config.transpilePackages = ["nativewind", "react-native-css-interop"];
     return config;
   },
 };

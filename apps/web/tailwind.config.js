@@ -10,6 +10,7 @@ module.exports = {
     join(__dirname, 'app/**/*.{js,ts,jsx,tsx}'),
     join(__dirname, '../../packages/ui/src/**/*.{js,ts,jsx,tsx}'),
   ],
+  presets: [require('nativewind/preset')],
   theme: {
     extend: {},
   },
