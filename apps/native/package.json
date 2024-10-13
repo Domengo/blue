@@ -21,7 +21,8 @@
     "react-native": "0.74.5",
     "react-native-web": "^0.19.10",
     "stream-browserify": "^3.0.0",
-    "vm-browserify": "^1.1.2"
+    "vm-browserify": "^1.1.2",
+    "@expo/metro-runtime": "~3.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
