@@ -1,6 +1,6 @@
 import * as React from "react";
 import {
-  TouchableOpacity,
+  Pressable,
   StyleSheet,
   GestureResponderEvent,
   Text,
@@ -13,9 +13,9 @@ export interface ButtonProps {
 
 export function Button({ text, onClick }: ButtonProps) {
   return (
-    <TouchableOpacity style={styles.button} onPress={onClick}>
+    <Pressable style={styles.button} onPress={onClick}>
       <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   button: {
     maxWidth: 200,
     textAlign: "center",
-    borderRadius: 10,
+    borderRadius: 25,
     paddingTop: 14,
     paddingBottom: 14,
     paddingLeft: 30,
