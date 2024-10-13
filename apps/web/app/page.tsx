@@ -1,6 +1,7 @@
 "use client";
 
-import { Button, ButtonWeb } from "@repo/ui";
+import { Button} from "@repo/ui";
+import ButtonWeb from '@repo/ui/src/web/button-web';
 
 import styles from "../styles/index.module.css";
 
