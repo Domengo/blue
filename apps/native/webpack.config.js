@@ -8,6 +8,9 @@ module.exports = async function (env, argv) {
   config.resolve.fallback = {
     ...config.resolve.fallback,
     crypto: require.resolve('react-native-crypto'),
+    stream: require.resolve('stream-browserify'),
+    crypto: require.resolve('crypto-browserify'),
+    vm: require.resolve('vm-browserify'),
   };
 
   // Provide polyfill for Buffer
