@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Button } from "@repo/ui";
+
 import { verifyInstallation } from 'nativewind';
 
 export default function Native() {
@@ -8,7 +9,7 @@ export default function Native() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Native</Text>
-      <Text className="text-red-500">NativeWind</Text>
+      <Text tw="text-red-500">NativeWind</Text>
       <Text className="{{ error ? 'text-red-600' : 'text-green-600' }}"></Text>
       <Button
         onClick={() => {
