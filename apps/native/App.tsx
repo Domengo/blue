@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Button } from "@repo/ui";
 
-import { verifyInstallation } from 'nativewind';
+import { verifyInstallation } from "nativewind";
 
 export default function Native() {
   verifyInstallation();

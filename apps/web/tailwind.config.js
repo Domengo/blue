@@ -1,4 +1,4 @@
-const { join } = require('path');
+const { join } = require("path");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,14 +6,13 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
-    join(__dirname, 'src/**/*.{js,ts,jsx,tsx}'),
-    join(__dirname, 'app/**/*.{js,ts,jsx,tsx}'),
-    join(__dirname, '../../packages/ui/src/**/*.{js,ts,jsx,tsx}'),
+    join(__dirname, "src/**/*.{js,ts,jsx,tsx}"),
+    join(__dirname, "app/**/*.{js,ts,jsx,tsx}"),
+    join(__dirname, "../../packages/ui/src/**/*.{js,ts,jsx,tsx}"),
   ],
-  presets: [require('nativewind/preset')],
+  presets: [require("nativewind/preset")],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
+};
