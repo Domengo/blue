@@ -2,7 +2,15 @@ const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 const webpack = require("webpack");
 
 module.exports = async function (env, argv) {
-  const config = await createExpoWebpackConfigAsync(env, argv);
+  const config = await createExpoWebpackConfigAsync(
+    {
+      ...env,
+      babel: {
+        dangerouslyAddModulePathsToTranspile: ["nativewind"],
+      },
+    },
+    argv,
+  );
 
   // Add crypto polyfill for web
   config.resolve.fallback = {
@@ -19,6 +27,11 @@ module.exports = async function (env, argv) {
       Buffer: ["buffer", "Buffer"],
     }),
   );
+
+  config.module.rules.push({
+    test: /\.css$/i,
+    use: ["postcss-loader"],
+  });
 
   return config;
 };
