@@ -1,0 +1,5 @@
+{
+  "image": "ghcr.io/prulloac/devcontainer-features/ollama:1",
+  "features": {
+  }
+}
