@@ -1,6 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   webpack: (config) => {
+    // config.transpilePackages = ["nativewind", "react-native-css-interop"];
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       // Transform all direct `react-native` imports to `react-native-web`
@@ -14,7 +15,7 @@ module.exports = {
       ...config.resolve.extensions,
     ];
 
-    config.transpilePackages = ["nativewind", "react-native-css-interop"];
+
     return config;
   },
 };

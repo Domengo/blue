@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "../../../packages/ui/src/globals.css";
+// import "../../../packages/ui/src/globals.css";
 
 export const metadata: Metadata = {
   title: "Weby",
