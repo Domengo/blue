@@ -15,7 +15,7 @@
     "prettier": "^3.2.5",
     "turbo": "^2.2.3"
   },
-  "name": "design-system",
+  "name": "bluewave-analytics",
   "packageManager": "npm@10.8.2",
   "workspaces": [
     "apps/*",

@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import {Button} from '@repo/ui/button';
+import { Button } from "@repo/ui/button";
 
 export default function Home() {
   return (
@@ -24,7 +25,15 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
           <li>Number 30</li>
         </ol>
-<Button className="border bg-red-500 p-4 rounded " > hello </Button>
+        <Button
+          onClick={() => {
+            alert("Clicked");
+          }}
+          className="border bg-red-500 p-4 rounded "
+        >
+          {" "}
+          hello{" "}
+        </Button>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
